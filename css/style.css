@@ -12,6 +12,10 @@
     --botao: 500;
 }
 
+
+/* ESTILIZAÇÃO TOPO */
+
+
 .topo{
     display: flex;
     padding: 32px;
@@ -53,4 +57,52 @@ input{
 }
 .fa-bars{
     font-size: 64px;
+}
+
+/* ESTILIZAÇÃO BANNER */
+
+.banner{
+    display: flex;
+    padding: 180px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+    background: url("../img/suco-de-laranja-fresco-e-frio.jpg");
+    background-size: cover;
+    background-position-y: 15%;
+}
+.banner__txt{
+    display: flex;
+    height: 211px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+h4{
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.destaque{
+    color: var(--verde);
+}
+h3{
+    font-family: Oswald;
+    font-size: 32px;
+    font-weight: 400;
+}
+.banner__imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.suco{
+    width: 208px;
+    height: 192px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 4.3px 0px rgba(0, 0, 0, 0.25);
 }
