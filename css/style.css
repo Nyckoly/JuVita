@@ -1,0 +1,56 @@
+:root{
+    --branco: #fff;
+    --laranja-claro: #F6E4D0;
+    --laranja-escuro: #EC8922;
+    --verde: #6DC35D;
+    --verde-escuro: #3F7333;
+    --laranja-muito-claro: #FFF9F3;
+    --preto: #000;
+
+    --titulos: 700;
+    --paragrafos: 300;
+    --botao: 500;
+}
+
+.topo{
+    display: flex;
+    padding: 32px;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 12px solid #EC8922;
+}
+
+.topo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+}
+.btn-pesquisar{
+    display: flex;
+    width: 461px;
+    height: 64px;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--preto);
+}
+
+input{
+    outline: none;
+    border: none;
+    padding: 0 16px;
+    width: 100%;
+    height: 100%;
+    color: #6D6B6B;
+    font-family: Oswald;
+    font-size: 28px;
+    font-weight: var(--paragrafos)
+}
+.fa-magnifying-glass{
+    font-size: 40px;
+}
+.fa-bars{
+    font-size: 64px;
+}
