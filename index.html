@@ -16,7 +16,7 @@
                 <img src="/img/logoJuVita.png" alt="">
                 <div class="topo-div">
                     <div class="btn-pesquisar">
-                        <input type="text" placeholder="Search">
+                        <input id="search" type="search" placeholder="Search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <i class="fa-solid fa-bars"></i>
@@ -26,7 +26,7 @@
         <main>
             <section class="banner">
                 <div class="banner__txt">
-                    <h4>Happy hour <span class="destaque">JuVita</span> !!!</h4>
+                    <h1>Happy hour <span class="destaque">JuVita</span> !!!</h1>
                     <h3>Venha refrescar seus finais de tarde conosco!</h3>
                 </div>
                 <div class="banner__imgs">
@@ -54,6 +54,65 @@
                 </div>
                 <div class="img-hv"></div>
                 <div class="img-vv"></div>
+            </section>
+            <section class="novidades">
+                <div class="texto3">
+                    <h2>Pitaya Fresh</h2>
+                    <p><span class="destaque">Novidade!</span> Além de profundamente refrescante, ajuda na saúde cardiovascular, graças aos ácidos graxos essenciais como os ômega 3, presentes em suas sementes.<br><br><br>Também promove o bom funcionamento do intestino, por ser uma fonte de fibras e colabora com a prevenção da anemia e osteoporose, pois contém vitaminas e minerais importantes como ferro, fósforo, vitaminas B, C e E.</p>
+                </div>
+                <div class="img-vp">
+                </div>
+            </section>
+            <section class="marketing">
+                <img src="img/squeeze.png" alt="">
+                <div class="texto4">
+                    <h2>Comprou, Solicitou, Ganhou!</h2>
+                    <p><span class="destaque">Participe!</span> Na compra de 10 sucos ou vitaminas, você ganha inteiramente grátis uma squeeze <span class="negrito">JuVita</span>. Basta preencher os dados abaixo e nós enviaremos sua squeeze em sua residência. </p>
+                    <h4>*Os prêmios podem variar de acordo com a disponibilidade. **Promoção válida por tempo limitado.</h4>
+                    <form action="" method="get">
+                        <div class="formulario nome">
+                          <label for="nome">Nome Completo</label>
+                          <input type="text" id="nome" />
+                        </div>
+                        <div class="formulario cpf">
+                          <label for="cpf">Cpf</label>
+                          <input type="text" id="cpf" placeholder="000.000.000-00" />
+                        </div>
+                        <div class="formulario cep">
+                          <label for="cep">CEP</label>
+                          <input type="text" id="cep" placeholder="00000-000">
+                        </div>
+                        <div class="formulario endereco">
+                          <label for="endereco">Endereço</label>
+                          <input type="text" id="endereco">
+                        </div>
+                        <div class="formulario numero">
+                            <label for="numero">Número</label>
+                            <input type="text" id="num">
+                        </div>
+                        <div class="formulario complemento">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="comp">
+                        </div>
+                        <div class="formulario cidade">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade">
+                        </div>
+                        <div class="formulario estado">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado">
+                        </div>
+                        <div class="formulario celular">
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" placeholder="(XX) X XXXX-XXXX">
+                        </div>
+
+                        <div class="botoes">
+                            <input type="submit" class="btn2" value="Solicitar Brinde"/>
+                            <input type="reset" class="btn1" value="Limpar"/>
+                        </div>
+                      </form>
+                </div>
             </section>
         </main>
         <footer></footer>

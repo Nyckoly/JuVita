@@ -43,7 +43,7 @@
     border: 1px solid var(--preto);
 }
 
-input{
+#search{
     outline: none;
     border: none;
     padding: 0 16px;
@@ -81,7 +81,7 @@ input{
     align-items: flex-start;
     gap: 32px;
 }
-h4{
+h1{
     font-family: Oswald;
     font-size: 14px;
     font-weight: 500;
@@ -114,7 +114,7 @@ h3{
 .sucos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 610px));
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
     justify-content: center;
     padding: 0px 16px;
     column-gap: 68px;
@@ -181,7 +181,7 @@ p{
 .vitaminas{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 610px));
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
     justify-content: center;
     padding: 0px 16px;
     column-gap: 68px;
@@ -228,4 +228,126 @@ p{
     font-weight: 300;
     border: 2px solid var(--verde);
     background: var(--verde);
+}
+
+/* ESTILIZAÇÃO SESSÃO - NOVIDADES */
+
+.novidades{
+    display: flex;
+    justify-content: center;
+    padding: 0px 68px;
+    gap: 68px;
+    background: var(--laranja-muito-claro);
+    flex-wrap: wrap;
+    align-items: center;
+}
+.texto3{
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    border-top: 12px solid var(--verde);
+    margin-top: 32px;
+    width: clamp(320px, 100%, 610px);
+}
+.img-vp{
+    background-image: url("../img/img-vnew-pitaya-fresh.png");
+    width: clamp(320px, 100%, 610px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 689px;
+}
+
+/* ESTILIZAÇÃO SESSÃO - MARKETING */
+
+.marketing{
+    display: flex;
+    padding: 0px 68px;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
+}
+.negrito{
+    font-weight: 700;
+}
+.texto4{
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    border-top: 12px solid var(--laranja-escuro);
+    margin-top: 32px;
+    width: clamp(320px, 100%, 775px);
+    /* width: clamp(320px, 100%, 610px); */
+}
+h4{
+    color: var(--preto);
+    font-family: "Oswald";
+    font-size: 14px;
+    font-weight: 400;
+}
+.texto4 form{
+    width: clamp(288px, 100%, 732px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+.formulario{
+    width: 100%;
+    display: flex;
+    padding-bottom: 29px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    color: var(--preto);
+    font-family: "Oswald";
+    font-size: 20px;
+    font-weight: 300;
+}
+.formulario input{
+    padding: 0;
+    width: 100%;
+    font-family: "Oswald";
+    font-size: 20px;
+    font-weight: 300;
+    /* padding: 0px 20px; */
+    border-radius: 8px;
+    border: 1px solid var(--verde);
+}
+
+.nome{
+    grid-column: 1/6;
+}
+.cpf{
+    grid-column: 1/4;
+}
+.cep{
+    grid-column: 4/6;
+}
+.endereco{
+    grid-column: 1/6;
+}
+.numero{
+    grid-column: 1/4;
+}
+.complemento{
+    grid-column: 4/6;
+}
+.cidade{
+    grid-column: 1/3;
+}
+.estado{
+    grid-column: 3/4;
+}
+.celular{
+    grid-column: 4/6;
+}
+.botoes{
+    grid-column: 1/6;
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
 }
